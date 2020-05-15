@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <!-- Foundation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <!-- Motion UI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+  <!-- Custom Overrides -->
+  <style>
+.orbit-bullets button {
+  width: 5rem;
+  height: 5rem;
+}
+.orbit-previous {
+  color: black;
+}
+.orbit-next {
+  color: black;
+}
+  </style>
+</head>
+
+<body class="grid-container">
+  <main class="grid-x">
+    <article class="cell large-12">
+      <div class="orbit" role="region" aria-label="My Cats Orbit" data-orbit>
+          <div class="orbit-container">
+            <div class="orbit-slide is-active">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="kenny800.jpg">
+                <figcaption class="orbit-caption">Kenny on a blanket</figcaption>
+              </figure>
+            </div>
+            <div class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="murphy.jpg">
+                <figcaption class="orbit-caption">Murphy staring</figcaption>
+              </figure>
+            </div>
+            <div class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="kennycropped800.jpg">
+                <figcaption class="orbit-caption">Kenny outside</figcaption>
+              </figure>
+            </div>
+            <div class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="murphy_sleep.jpg">
+                <figcaption class="orbit-caption">Murphy sleeping</figcaption>
+              </figure>
+            </div>
+            <div class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="together.jpg">
+                <figcaption class="orbit-caption">Cats together</figcaption>
+              </figure>
+            </div>
+          </div> <!-- End Orbit Container -->
+          <nav class="orbit-bullets hide-for-small-only">
+            <a class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</a>
+            <a class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</a>
+            <button class="is-active" data-slide="0">
+              <span class="show-for-sr">First slide details</span>
+              <span class="show-for-sr">Current slide</span>
+              <img class="thumbnail" class="orbit-image" src="kenny800.jpg">
+            </button>
+            <button class="is-active" data-slide="1">
+              <span class="show-for-sr">Second slide details</span>
+              <img class="thumbnail" class="orbit-image" src="murphy.jpg">
+            </button>
+            <button class="is-active" data-slide="2">
+              <span class="show-for-sr">Third slide details</span>
+              <img class="thumbnail" class="orbit-image" src="kennycropped800.jpg">
+            </button>
+            <button class="is-active" data-slide="3">
+              <span class="show-for-sr">Third slide details</span>
+              <img class="thumbnail" class="orbit-image" src="murphy_sleep.jpg">
+            </button>
+            <button class="is-active" data-slide="4">
+              <span class="show-for-sr">Third slide details</span>
+              <img class="thumbnail" class="orbit-image" src="together.jpg">
+            </button>
+
+          </nav>
+      </div> <!-- End Orbit -->
+    </article>
+  </main>
+  <script>$(document).foundation();</script>
+</body>
+
+</html>
